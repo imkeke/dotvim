@@ -84,6 +84,7 @@ nmap <leader>v :tabedit $MYVIMRC<CR>
 map <leader>n :NERDTreeToggle<CR>
 map <leader>f :FufFile<CR>
 map <leader>b :FufBuffer<CR>
+map <leader>t :AsyncFinder -mode=m<CR>
 
 " tab control
 nmap <C-t>	 :tabnew<CR>
@@ -133,7 +134,6 @@ set listchars=tab:▸\ ,eol:¬
 " taglist
 let Tlist_JS_Settings = 'javascript;s:string;a:array;o:object;f:function'
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
-nmap <leader>t :TagbarToggle<CR>
 let g:tagbar_ctags_bin = 'ctags'
 let g:tagbar_width = 30
 
