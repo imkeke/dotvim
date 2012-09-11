@@ -1,6 +1,8 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
+set bg=dark
+colorscheme solarized
 set nocompatible
 set history=400
 sy on
@@ -30,12 +32,12 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 if has("autocmd")
-	autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab
-	autocmd FileType html setlocal ts=4 sts=4 sw=4 expandtab
-	autocmd FileType php setlocal ts=4 sts=4 sw=4 expandtab
-	autocmd FileType css setlocal ts=4 sts=4 sw=4 expandtab
-	autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
-	autocmd BufRead,BufNewFile *.js set syntax=jquery
+	" autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab
+	" autocmd FileType html setlocal ts=4 sts=4 sw=4 expandtab
+	" autocmd FileType php setlocal ts=4 sts=4 sw=4 expandtab
+	" autocmd FileType css setlocal ts=4 sts=4 sw=4 expandtab
+	" autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
+	" autocmd BufRead,BufNewFile *.js set syntax=jquery
 	autocmd BufRead,BufNewFile *.vm set filetype=html
 	autocmd BufRead,BufNewFile *.css set ft=css syntax=css3
 	autocmd BufRead,BufNewFile *.ejs set ft=jst syntax=jst
