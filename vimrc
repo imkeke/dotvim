@@ -3,6 +3,8 @@ call pathogen#infect()
 
 set bg=dark
 colorscheme solarized
+set linespace=3
+
 set nocompatible
 set history=400
 sy on
@@ -49,7 +51,8 @@ vmap <s-tab> <gv
 
 " MacVim
 if has("mac") || has("gui_macvim")
-	set guifont=Monaco:h11
+	" set guifont=Monaco:h12
+	set guifont=Menlo:h13
 	" set guifont=Inconsolata:h13
 	" set guifont=Courier:h12
 	let s:lines=&lines
