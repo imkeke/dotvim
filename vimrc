@@ -2,7 +2,7 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
 set bg=dark
-colorscheme solarized
+colorscheme Tomorrow-Night
 set linespace=3
 
 set nocompatible
