@@ -37,3 +37,6 @@
 [submodule "bundle/tomorrow-theme"]
 	path = bundle/tomorrow-theme
 	url = https://github.com/imkeke/tomorrow-theme.git
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
