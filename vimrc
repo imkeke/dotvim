@@ -8,7 +8,7 @@ set linespace=3
 set nocompatible
 set history=400
 sy on
-set go=
+set go=e
 set number
 set t_vb=
 set magic
@@ -41,8 +41,9 @@ if has("autocmd")
 	" autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
 	" autocmd BufRead,BufNewFile *.js set syntax=jquery
 	autocmd BufRead,BufNewFile *.vm set filetype=html
-	autocmd BufRead,BufNewFile *.css set ft=css syntax=css3
 	autocmd BufRead,BufNewFile *.ejs set ft=jst syntax=jst
+	autocmd BufRead,BufNewFile *.md set filetype=markdown
+	autocmd BufRead,BufNewFile *.less set filetype=css syntax=less
 endif
 nmap <tab> v>
 nmap <s-tab> v<
