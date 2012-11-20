@@ -52,3 +52,9 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/vim-markdown-folding"]
+	path = bundle/vim-markdown-folding
+	url = git://github.com/nelstrom/vim-markdown-folding.git
+[submodule "bundle/vim-css-color"]
+	path = bundle/vim-css-color
+	url = git://github.com/skammer/vim-css-color.git

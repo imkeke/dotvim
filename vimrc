@@ -105,6 +105,7 @@ map <D-5> 5gt
 
 " foldmethod
 set foldmethod=marker
+nnoremap <Space> za
 
 cmap <c-a> <home>
 cmap <c-e> <end>
