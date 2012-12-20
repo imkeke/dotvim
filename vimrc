@@ -34,12 +34,6 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 if has("autocmd")
-	" autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab
-	" autocmd FileType html setlocal ts=4 sts=4 sw=4 expandtab
-	" autocmd FileType php setlocal ts=4 sts=4 sw=4 expandtab
-	" autocmd FileType css setlocal ts=4 sts=4 sw=4 expandtab
-	" autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab
-	" autocmd BufRead,BufNewFile *.js set syntax=jquery
 	autocmd BufRead,BufNewFile *.vm set filetype=html
 	autocmd BufRead,BufNewFile *.ejs set ft=jst syntax=jst
 	autocmd BufRead,BufNewFile *.md set filetype=markdown
@@ -87,7 +81,8 @@ endif
 
 let mapleader = ","
 nmap <leader>v :tabedit $MYVIMRC<CR>
-map <leader>n :NERDTreeToggle<CR>
+map <leader>n :NERDTree<CR>
+map <leader>m :NERDTreeClose<CR>
 map <leader>f :FufFile<CR>
 map <leader>b :FufBuffer<CR>
 map <leader>t :AsyncFinder -mode=m<CR>
