@@ -29,16 +29,18 @@ vmap <C-A-Up> xkP`[V`]
 vmap <C-A-Down> xp`[V`]
 
 " tab
+if has("autocmd")
+	autocmd BufRead,BufNewFile *.vm set filetype=html
+	autocmd BufRead,BufNewFile *.ejs set ft=jst syntax=jst
+	autocmd BufRead,BufNewFile *.jade set tabstop=2 softtabstop=2 shiftwidth=2
+	autocmd BufRead,BufNewFile *.md set filetype=markdown
+	autocmd BufRead,BufNewFile *.less set filetype=css syntax=less
+endif
 set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-if has("autocmd")
-	autocmd BufRead,BufNewFile *.vm set filetype=html
-	autocmd BufRead,BufNewFile *.ejs set ft=jst syntax=jst
-	autocmd BufRead,BufNewFile *.md set filetype=markdown
-	autocmd BufRead,BufNewFile *.less set filetype=css syntax=less
-endif
+
 nmap <tab> v>
 nmap <s-tab> v<
 vmap <tab> >gv
