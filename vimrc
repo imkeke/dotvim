@@ -9,7 +9,7 @@ set nocompatible
 set history=400
 sy on
 set go=e
-set number
+set relativenumber
 set t_vb=
 set magic
 set ru
