@@ -67,3 +67,9 @@
 [submodule "bundle/indent-object"]
 	path = bundle/indent-object
 	url = git://github.com/michaeljsmith/vim-indent-object.git
+[submodule "bundle/session"]
+	path = bundle/session
+	url = git://github.com/xolox/vim-session.git
+[submodule "bundle/seek"]
+	path = bundle/seek
+	url = git://github.com/goldfeld/vim-seek.git

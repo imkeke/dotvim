@@ -1,6 +1,11 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
+inoremap <F1> <ESC>
+nnoremap <F1> <NOP>
+
+let g:session_autosave = 'no'
+
 set bg=dark
 colorscheme Tomorrow-Night
 set linespace=3
