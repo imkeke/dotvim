@@ -73,3 +73,6 @@
 [submodule "bundle/seek"]
 	path = bundle/seek
 	url = git://github.com/goldfeld/vim-seek.git
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
