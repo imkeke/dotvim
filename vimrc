@@ -159,3 +159,6 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
+
+" snipMate setting
+let g:snippets_dir = '~/.vim/snippets'
