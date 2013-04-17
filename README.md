@@ -13,15 +13,15 @@ ln -s ~/.vim/vimrc ~/.vimrc
 
 Add plugin
 ----------
-`
+```
 cd ~/.vim
 git submodule add git://github.com/xxx.git bundle/xxx
-`
+```
 
 Update plugins
 --------------
 
-`
+```
 cd ~/.vim
 git submodule foreach "git pull"
-`
+```
