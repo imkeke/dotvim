@@ -6,10 +6,10 @@ dotvim
 Install
 -------
 
-`
+```
 git clone git@github.com:imkeke/dotvim.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
-`
+```
 
 Add plugin
 ----------
