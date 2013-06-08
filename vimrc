@@ -59,7 +59,7 @@ if has("mac") || has("gui_macvim")
 	" set guifont=Courier:h12
 	let s:lines=&lines
 	let s:columns=&columns
-	lcd ~/
+	lcd ~/Sites/tutugogo/
 endif
 
 " split window
@@ -90,9 +90,16 @@ let mapleader = ","
 nmap <leader>v :tabedit $MYVIMRC<CR>
 map <leader>n :NERDTree<CR>
 map <leader>m :NERDTreeClose<CR>
-map <leader>f :FufFile<CR>
-map <leader>b :FufBuffer<CR>
-map <leader>t :AsyncFinder -mode=m<CR>
+
+" ctrlp
+let g:ctrlp_map = ',t'
+let g:ctrlp_open_multiple_files = 'v'
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git)$',
+  \ 'file': '\v\.(log|jpg|png|jpeg|vdi)$',
+  \ }
 
 " tab control
 nmap <C-t>	 :tabnew<CR>
