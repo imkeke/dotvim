@@ -28,6 +28,9 @@ set showmatch
 set clipboard+=unnamed
 :filetype plugin on
 set directory=~/tmp,/tmp 
+let g:airline_powerline_fonts = 1
+let g:airline_left_sep=''
+let g:airline_right_sep=''
 
 " Multi lines motion
 vmap <C-A-Up> xkP`[V`]
@@ -54,7 +57,7 @@ vmap <s-tab> <gv
 " MacVim
 if has("mac") || has("gui_macvim")
 	" set guifont=Monaco:h12
-	set guifont=Menlo:h13
+	set guifont=Droid\ Sans\ Mono\ for\ Powerline:h13
 	" set guifont=Inconsolata:h13
 	" set guifont=Courier:h12
 	let s:lines=&lines
