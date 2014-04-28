@@ -4,10 +4,12 @@ call pathogen#infect()
 inoremap <F1> <ESC>
 nnoremap <F1> <NOP>
 
+" session
 let g:session_autosave = 'no'
+set sessionoptions=tabpages
 
 set bg=dark
-colorscheme Tomorrow-Night
+colorscheme Tomorrow-Night-Blue
 set linespace=3
 
 set nocompatible
@@ -28,8 +30,10 @@ set showmatch
 set clipboard+=unnamed
 :filetype plugin on
 set directory=~/tmp,/tmp 
+
+" airline
 let g:airline_powerline_fonts = 1
-let g:airline_left_sep=''
+" let g:airline_left_sep=''
 let g:airline_right_sep=''
 
 " Multi lines motion
@@ -57,9 +61,10 @@ vmap <s-tab> <gv
 " MacVim
 if has("mac") || has("gui_macvim")
 	" set guifont=Monaco:h12
-	set guifont=Droid\ Sans\ Mono\ for\ Powerline:h13
 	" set guifont=Inconsolata:h13
 	" set guifont=Courier:h12
+	" set guifont=Droid\ Sans\ Mono\ for\ Powerline:h14
+    set guifont=CosmicSansNeueMono:h17
 	let s:lines=&lines
 	let s:columns=&columns
 	lcd ~/Sites/tutugogo/
@@ -93,6 +98,8 @@ let mapleader = ","
 nmap <leader>v :tabedit $MYVIMRC<CR>
 map <leader>n :NERDTree<CR>
 map <leader>m :NERDTreeClose<CR>
+nmap <leader>t :CtrlP<CR>
+nmap <leader>u :CtrlPMRUFiles<CR>
 
 " ctrlp
 let g:ctrlp_map = ',t'
