@@ -82,3 +82,6 @@
 [submodule "bundle/emmet"]
 	path = bundle/emmet
 	url = https://github.com/mattn/emmet-vim.git
+[submodule "bundle/vim-misc"]
+	path = bundle/vim-misc
+	url = https://github.com/xolox/vim-misc.git
