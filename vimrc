@@ -5,12 +5,17 @@ inoremap <F1> <ESC>
 nnoremap <F1> <NOP>
 
 " session
+let g:session_autoload = 'no'
 let g:session_autosave = 'no'
 set sessionoptions=tabpages
 
 set bg=dark
 colorscheme Tomorrow-Night-Blue
 set linespace=3
+
+" for long line slow
+set synmaxcol=120
+set nowrap
 
 set nocompatible
 set history=400
