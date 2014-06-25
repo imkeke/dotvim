@@ -7,7 +7,7 @@ font-family: "Microsoft YaHei", "\9ED1\4F53";
 endsnippet
 
 snippet log
-console.log(${1});
+console.log(${1})
 endsnippet
 
 snippet date
@@ -32,4 +32,19 @@ $('$1').on('click', function() {
     $2
 	$0
 })
+endsnippet
+
+snippet csscm
+/* $1
+ * keke `!v strftime("%Y-%m-%d %H:%M")`
+ */
+$0
+endsnippet
+
+snippet mustache
+{% raw %}
+<script id="tpl-comment-li" type="text/x-tmpl-mustache">
+	$1
+</script>
+{% endraw %}
 endsnippet
