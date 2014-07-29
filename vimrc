@@ -72,7 +72,9 @@ if has("mac") || has("gui_macvim")
     set guifont=CosmicSansNeueMono:h17
 	let s:lines=&lines
 	let s:columns=&columns
-	lcd ~/Sites/tutugogo/
+	lcd ~/Sites/
+elseif has("unix")
+    set guifont=Fantasque\ Sans\ Mono\ 14
 endif
 
 " split window
