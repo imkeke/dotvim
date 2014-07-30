@@ -54,9 +54,9 @@ if has("autocmd")
 	autocmd BufRead,BufNewFile *.less set filetype=css syntax=less
 endif
 set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 
 nmap <tab> v>
 nmap <s-tab> v<
