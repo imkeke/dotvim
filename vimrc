@@ -75,6 +75,7 @@ if has("mac") || has("gui_macvim")
 	lcd ~/Sites/
 elseif has("unix")
     set guifont=Fantasque\ Sans\ Mono\ 14
+    set clipboard=unnamedplus
 endif
 
 " split window
