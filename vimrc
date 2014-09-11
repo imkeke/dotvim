@@ -14,8 +14,8 @@ colorscheme Tomorrow-Night-Blue
 set linespace=3
 
 " for long line slow
-set synmaxcol=120
-set nowrap
+" set synmaxcol=120
+" set nowrap
 
 set nocompatible
 set history=400
@@ -38,7 +38,7 @@ set directory=~/tmp,/tmp
 
 " airline
 let g:airline_powerline_fonts = 1
-" let g:airline_left_sep=''
+let g:airline_left_sep=''
 let g:airline_right_sep=''
 
 " Multi lines motion
@@ -74,7 +74,8 @@ if has("mac") || has("gui_macvim")
 	let s:columns=&columns
 	lcd ~/Sites/
 elseif has("unix")
-    set guifont=Fantasque\ Sans\ Mono\ 14
+    " set guifont=Fantasque\ Sans\ Mono\ 14
+    set guifont=Consolas\ for\ Powerline\ 12
     set clipboard=unnamedplus
 endif
 
