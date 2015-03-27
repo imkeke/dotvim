@@ -34,7 +34,7 @@ set incsearch
 set showmatch
 set clipboard+=unnamed
 :filetype plugin on
-set directory=~/tmp,/tmp 
+set directory=~/tmp,/tmp
 
 " persistent undo
 if exists("&undodir")
