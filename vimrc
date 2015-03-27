@@ -36,6 +36,14 @@ set clipboard+=unnamed
 :filetype plugin on
 set directory=~/tmp,/tmp 
 
+" persistent undo
+if exists("&undodir")
+  set undofile
+  let &undodir=&directory
+  set undolevels=500
+  set undoreload=500
+endif
+
 " airline
 let g:airline_powerline_fonts = 1
 let g:airline_left_sep=''
