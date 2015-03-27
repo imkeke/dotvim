@@ -55,11 +55,11 @@ vmap <C-A-Down> xp`[V`]
 
 " tab
 if has("autocmd")
-	autocmd BufRead,BufNewFile *.vm set filetype=html
-	autocmd BufRead,BufNewFile *.ejs set ft=jst syntax=jst
-	autocmd BufRead,BufNewFile *.jade set tabstop=2 softtabstop=2 shiftwidth=2
-	autocmd BufRead,BufNewFile *.md set filetype=markdown
-	autocmd BufRead,BufNewFile *.less set filetype=css syntax=less
+  autocmd BufRead,BufNewFile *.vm set filetype=html
+  autocmd BufRead,BufNewFile *.ejs set ft=jst syntax=jst
+  autocmd BufRead,BufNewFile *.jade set tabstop=2 softtabstop=2 shiftwidth=2
+  autocmd BufRead,BufNewFile *.md set filetype=markdown
+  autocmd BufRead,BufNewFile *.less set filetype=css syntax=less
 endif
 set expandtab
 set tabstop=2
@@ -73,18 +73,13 @@ vmap <s-tab> <gv
 
 " MacVim
 if has("mac") || has("gui_macvim")
-	" set guifont=Monaco:h12
-	" set guifont=Inconsolata:h13
-	" set guifont=Courier:h12
-	" set guifont=Droid\ Sans\ Mono\ for\ Powerline:h14
-    set guifont=CosmicSansNeueMono:h17
-	let s:lines=&lines
-	let s:columns=&columns
-	lcd ~/Sites/
+  set guifont=CosmicSansNeueMono:h17
+  let s:lines=&lines
+  let s:columns=&columns
+  lcd ~/Sites/
 elseif has("unix")
-    " set guifont=Fantasque\ Sans\ Mono\ 14
-    set guifont=Consolas\ for\ Powerline\ 12
-    set clipboard=unnamedplus
+  set guifont=Consolas\ for\ Powerline\ 12
+  set clipboard=unnamedplus
 endif
 
 " split window
@@ -95,20 +90,20 @@ map <C-l> <C-W>l
 
 " file encoding
 if has("multi_byte")
-	set encoding=utf-8
-	set termencoding=utf-8
-	set formatoptions+=mM
-	set fencs=utf-8,gbk
-	if v:lang =~? '^\(zh\)\|\(ja\)\|\(ko\)'
-		set ambiwidth=double
-	endif
-	if has("win32")
-		source $VIMRUNTIME/delmenu.vim
-		source $VIMRUNTIME/menu.vim
-		language messages zh_CN.utf-8
-	endif
+  set encoding=utf-8
+  set termencoding=utf-8
+  set formatoptions+=mM
+  set fencs=utf-8,gbk
+  if v:lang =~? '^\(zh\)\|\(ja\)\|\(ko\)'
+    set ambiwidth=double
+  endif
+  if has("win32")
+    source $VIMRUNTIME/delmenu.vim
+    source $VIMRUNTIME/menu.vim
+    language messages zh_CN.utf-8
+  endif
 else
-	echoerr "Sorry, this version of (g)vim was not compiled with +multi_byte"
+  echoerr "Sorry, this version of (g)vim was not compiled with +multi_byte"
 endif
 
 let mapleader = ","
@@ -164,10 +159,10 @@ set ls=2
 set wildmenu
 
 func! GetPWD()
-	return substitute(getcwd(), "", "", "g")
+  return substitute(getcwd(), "", "", "g")
 endf
 if has('netbeans_intg')
-	set autochdir
+  set autochdir
 endif
 
 " some nice thing
@@ -182,15 +177,15 @@ let g:tagbar_width = 30
 
 " the whitespace
 function! <SID>StripTrailingWhitespaces()
-    " Preparation: save last search, and cursor position.
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-    " Do the business:
-    %s/\s\+$//e
-    " Clean up: restore previous search history, and cursor position
-    let @/=_s
-    call cursor(l, c)
+  " Preparation: save last search, and cursor position.
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " Do the business:
+  %s/\s\+$//e
+  " Clean up: restore previous search history, and cursor position
+  let @/=_s
+  call cursor(l, c)
 endfunction
 nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 
