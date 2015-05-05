@@ -10,7 +10,7 @@ let g:session_autosave = 'no'
 set sessionoptions=tabpages
 
 set bg=dark
-colorscheme Tomorrow-Night-Blue
+colorscheme Tomorrow-Night-Eighties
 set linespace=3
 
 " for long line slow
@@ -107,6 +107,7 @@ else
 endif
 
 let mapleader = ","
+noremap \ ,
 nmap <leader>v :tabedit $MYVIMRC<CR>
 map <leader>n :NERDTree<CR>
 map <leader>m :NERDTreeClose<CR>
@@ -192,3 +193,6 @@ nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
 " snippets setting
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 let g:UltiSnipsExpandTrigger="<c-j>"
+
+" jsx
+let g:jsx_ext_required = 0
