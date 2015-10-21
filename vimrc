@@ -29,7 +29,7 @@ set ai
 set dy=lastline
 set backspace=indent,eol,start
 set nobackup
-set hlsearch
+" set hlsearch
 set incsearch
 set showmatch
 set clipboard+=unnamed
@@ -73,7 +73,7 @@ vmap <s-tab> <gv
 
 " MacVim
 if has("mac") || has("gui_macvim")
-  set guifont=CosmicSansNeueMono:h17
+  set guifont=CosmicSansNeueMono:h16
   let s:lines=&lines
   let s:columns=&columns
   lcd ~/Sites/
@@ -112,6 +112,7 @@ nmap <leader>v :tabedit $MYVIMRC<CR>
 map <leader>n :NERDTree<CR>
 map <leader>m :NERDTreeClose<CR>
 nmap <leader>t :CtrlP<CR>
+nmap <leader>a :CtrlPBuffer<CR>
 nmap <leader>u :CtrlPMRUFiles<CR>
 
 " ctrlp

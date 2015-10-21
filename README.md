@@ -4,7 +4,7 @@ dotvim
 Init
 -------
 ```bash
-git clone git@github.com:imkeke/dotvim.git ~/.vim
+git clone https://github.com/imkeke/dotvim.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 cd ~/.vim
 git submodule init
