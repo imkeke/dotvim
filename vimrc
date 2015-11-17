@@ -1,5 +1,5 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
+execute pathogen#infect()
 
 inoremap <F1> <ESC>
 nnoremap <F1> <NOP>
@@ -78,7 +78,7 @@ if has("mac") || has("gui_macvim")
   let s:columns=&columns
   lcd ~/Sites/
 elseif has("unix")
-  set guifont=Consolas\ for\ Powerline\ 12
+  set guifont=Consolas\ 10
   set clipboard=unnamedplus
 endif
 
@@ -197,3 +197,8 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 
 " jsx
 let g:jsx_ext_required = 0
+
+" fuck airline
+if ! has("gui_running")
+  let g:loaded_airline = 1
+endif
