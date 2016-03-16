@@ -9,9 +9,11 @@ let g:session_autoload = 'no'
 let g:session_autosave = 'no'
 set sessionoptions=tabpages
 
-set bg=dark
-colorscheme Tomorrow-Night-Eighties
-set linespace=3
+if has("gui_running")
+  set bg=dark
+  colorscheme Tomorrow-Night-Eighties
+  set linespace=3
+endif
 
 " for long line slow
 " set synmaxcol=120
@@ -20,7 +22,7 @@ set linespace=3
 set nocompatible
 set history=400
 sy on
-set go=e
+set go=
 set relativenumber
 set t_vb=
 set magic
@@ -48,6 +50,9 @@ endif
 let g:airline_powerline_fonts = 1
 let g:airline_left_sep=''
 let g:airline_right_sep=''
+if ! has("gui_running")
+  let g:loaded_airline = 1
+endif
 
 " Multi lines motion
 vmap <C-A-Up> xkP`[V`]
@@ -78,7 +83,7 @@ if has("mac") || has("gui_macvim")
   let s:columns=&columns
   lcd ~/Sites/
 elseif has("unix")
-  set guifont=Consolas\ 10
+  set guifont=Fantasque\ Sans\ Mono\ 12
   set clipboard=unnamedplus
 endif
 
@@ -198,7 +203,6 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 " jsx
 let g:jsx_ext_required = 0
 
-" fuck airline
-if ! has("gui_running")
-  let g:loaded_airline = 1
-endif
+" 80
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
