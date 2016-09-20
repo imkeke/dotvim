@@ -22,7 +22,7 @@ endif
 set nocompatible
 set history=400
 sy on
-set go=
+"set go=
 set relativenumber
 set t_vb=
 set magic
@@ -65,6 +65,8 @@ if has("autocmd")
   autocmd BufRead,BufNewFile *.jade set tabstop=2 softtabstop=2 shiftwidth=2
   autocmd BufRead,BufNewFile *.md set filetype=markdown
   autocmd BufRead,BufNewFile *.less set filetype=css syntax=less
+  autocmd BufRead,BufNewFile *.twig set filetype=html syntax=html
+  autocmd BufRead,BufNewFile *.handlebars set filetype=html syntax=html
 endif
 set expandtab
 set tabstop=2
