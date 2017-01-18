@@ -11,7 +11,7 @@ set sessionoptions=tabpages
 
 if has("gui_running")
   set bg=dark
-  colorscheme Tomorrow-Night-Eighties
+  colorscheme Tomorrow-Night
   set linespace=3
 endif
 
@@ -85,7 +85,8 @@ if has("mac") || has("gui_macvim")
   let s:columns=&columns
   lcd ~/Sites/
 elseif has("unix")
-  set guifont=Fantasque\ Sans\ Mono\ 12
+  " set guifont=Fantasque\ Sans\ Mono\ 12
+  set guifont=Consolas\ 11
   set clipboard=unnamedplus
 endif
 
